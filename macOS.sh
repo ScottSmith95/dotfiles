@@ -1,19 +1,25 @@
 #!/bin/sh
 
-# macOS
+# macOS Guest (non-root) user.
 
 # Variables.
-Username='Scott'
-ScriptDir='/Users/Scott/Documents/Personal/Startup\ Scripts'
+Username='studentuser'
+ScriptDir='/Users/studentuser/Downloads'
 Style='\033[0;36m'
 Reset='\033[0m' # No Color
 
 printf "\n${Style}/////////////////////////\n"
 printf "Welcome! \n\n"
 printf "Kicking things off by installing Homebrew. \n"
+printf "For this install, run this instead of the homebrew install script: https://gist.github.com/skyl/36563a5be809e54dc139\n"
 printf "/////////////////////////${Reset}\n\n"
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+mkdir -p ~/usr
+chflags hidden ~/usr
+echo "PATH="/Users/studentuser/usr/local/bin:$PATH"" > ~/.bash_profile
+
+# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew update
 brew upgrade
 
@@ -36,15 +42,14 @@ npm install -g npm-check gulp-cli
 #   ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
 
 printf "\n${Style}/////////////////////////\n"
-printf "Installing Apps from Homebrew and MAS. \n\n"
-printf "Get ready to type in Apple ID password. \n"
+printf "Installing Apps from Homebrew. \n\n"
 printf "/////////////////////////${Reset}\n\n"
 cd $ScriptDir
 brew tap Homebrew/bundle
-brew install mas
+# brew install mas
 brew bundle
 
-mas signin --dialog InventScott@icloud.com
+# mas signin --dialog InventScott@icloud.com
 
 brew cask cleanup
 brew cleanup --force
@@ -83,6 +88,16 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write com.apple.Safari HomePage -string "favorites://"
 # Hide the horrendous Adobe folder after LR opens.
 chflags hidden ~/Documents/Adobe
+
+# The following preferences overwrite UW-IT's preference settings, not defaults.
+# Enable natural scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+# Don't show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool false
+# Reset tracking speed
+defaults delete -g com.apple.trackpad.scaling
+# Speed up Mission Control animations
+defaults delete com.apple.dock expose-animation-duration
 
 # Set git info
 git config --global user.name "Scott Smith"
