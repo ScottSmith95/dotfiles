@@ -11,7 +11,6 @@ Reset='\033[0m' # No Color
 printf "\n${Style}/////////////////////////\n"
 printf "Welcome! \n\n"
 printf "Kicking things off by installing Homebrew. \n"
-printf "For this install, run this instead of the homebrew install script: https://gist.github.com/skyl/36563a5be809e54dc139\n"
 printf "/////////////////////////${Reset}\n\n"
 
 mkdir -p ~/usr

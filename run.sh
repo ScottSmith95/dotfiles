@@ -2,12 +2,28 @@
 
 # Run this file to download and run environment setup.
 
-GIST_PATH=https://gist.github.com/ScottSmith95/87d16e272255b9528f892bce265dfd90/archive/64cfe99c8191848a5f85a03983da3223864b1c68.zip
+Style='\033[0;36m'
+Reset='\033[0m' # No Color
+
+printf "\n${Style}/////////////////////////\n"
+printf "Downloading files... \n"
+
+GIST_PATH=https://github.com/ScottSmith95/dotfiles/archive/guest.zip
 
 cd ~/Desktop
+mkdir -p setup
+cd setup
 curl -fsSL $GIST_PATH -o setup.zip
-unzip setup.zip
-# rm setup.zip
-# cd setup
-# echo "I'd run that."
-# sh -c macOS.sh
+unzip -oq setup.zip
+mv -qv dotfiles-guest/* ./ &>/dev/null
+rm -rf setup.zip dotfiles-guest
+
+printf "\nDone. \n"
+printf "Attempting to run script. \n"
+
+chmod +x macOS.sh
+
+printf "Success! \n"
+printf "/////////////////////////${Reset}\n"
+
+./macOS.sh
