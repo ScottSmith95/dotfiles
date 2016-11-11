@@ -27,6 +27,7 @@ mas  'iA Writer', id: 775737590
 # DL: Sketch; Adobe Creative Cloud: LR ID AI PS
 
 # Utilities
+brew 'sl'
 cask 'appcleaner'
 cask 'keepingyouawake'
 cask 'imageoptim'

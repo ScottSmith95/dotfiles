@@ -40,11 +40,11 @@ printf "Installing Apps from Homebrew and MAS. \n\n"
 printf "Get ready to type in Apple ID password. \n"
 printf "/////////////////////////${Reset}\n\n"
 cd $ScriptDir
-brew tap Homebrew/bundle
 brew install mas
-brew bundle
-
 mas signin --dialog InventScott@icloud.com
+
+brew tap Homebrew/bundle
+brew bundle
 
 brew cask cleanup
 brew cleanup --force
