@@ -30,10 +30,10 @@ npm install -g npm-check gulp-cli
   # ~/Documents/* (not synced/aliased crap)
   # ~/Pictures/* (sans iCloud Photo Library)
   # ~/Movies/*
+  # ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
+  # ~/Library/Fonts/*
   # ~/Library/Application Support/Adobe/Lightroom/Develop Presets/User Presets/*
   # ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/*
-  # ~/Library/Fonts/*
-  # ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
 
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Apps from Homebrew and MAS. \n\n"
