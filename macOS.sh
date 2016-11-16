@@ -23,8 +23,11 @@ printf "Installing Node Things. \n"
 printf "/////////////////////////${Reset}\n\n"
 brew tap homebrew/versions
 brew install node6-lts
-npm install -g npm # Update npm.
-npm install -g npm-check gulp-cli
+npm install --depth -1 --quiet -g npm # Update npm.
+npm install --depth -1 --quiet -g npm-check gulp-cli
+
+# Python
+sudo easy_install -q pip
 
 # Files to move over:
   # ~/Documents/* (not synced/aliased crap)
