@@ -77,6 +77,8 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1 # login screen 
 defaults write com.apple.dock mru-spaces -bool false
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+# Show Path bar in Finder
+defaults write com.apple.finder ShowPathbar -bool true
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Enable the Develop menu and the Web Inspector in Safari
@@ -84,7 +86,10 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 # Set Safari’s home page to the favourites page.
+defaults write com.apple.Safari HomePage -string "" # Not sure if the next one works.
 defaults write com.apple.Safari HomePage -string "favorites://"
+# Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
 # Hide the horrendous Adobe folder after LR opens.
 chflags hidden ~/Documents/Adobe
 
