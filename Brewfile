@@ -21,9 +21,12 @@ cask 'coda'
 cask 'google-chrome'
 cask 'github-desktop'
 cask 'parallels-desktop'
+cask 'framer'
+cask 'origami-studio'
 mas  'Slack', id: 803453959
 mas  'Pixelmator', id: 407963104
 mas  'iA Writer', id: 775737590
+mas  'Xcode', id: 497799835
 # DL: Sketch; Adobe Creative Cloud: LR ID AI PS
 
 # Utilities
