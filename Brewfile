@@ -46,3 +46,9 @@ mas  'Kaleidoscope', id: 587512244
 # brew cask install steam
 mas  'Tweetbot', id: 557168941
 # DL: ?Steam ?Skype
+
+# Fonts
+cask 'font-work-sans'
+cask 'font-open-sans'
+cask 'font-opendyslexic'
+cask 'font-roboto-mono'
