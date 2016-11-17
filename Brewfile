@@ -20,7 +20,7 @@ cask 'hyper'
 cask 'coda'
 cask 'google-chrome'
 cask 'github-desktop'
-cask 'parallels-desktop'
+# cask 'parallels-desktop' # Installs Parallels 12 and I only own 11.
 cask 'framer'
 cask 'origami-studio'
 mas  'Slack', id: 803453959

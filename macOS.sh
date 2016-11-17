@@ -49,6 +49,10 @@ mas signin --dialog InventScott@icloud.com
 brew tap Homebrew/bundle
 brew bundle
 
+brew tap caskroom/versions
+brew cask install parallels-desktop11
+brew untap caskroom/versions # I won't use this often and parallels 11 isn't getting updates.
+
 brew cask cleanup
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
