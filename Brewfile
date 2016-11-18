@@ -31,6 +31,7 @@ mas  'Xcode', id: 497799835
 
 # Utilities
 brew 'sl'
+brew 'youtube-dl'
 cask 'appcleaner'
 cask 'keepingyouawake'
 cask 'imageoptim'
