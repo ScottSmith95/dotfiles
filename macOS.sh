@@ -101,6 +101,8 @@ defaults write com.apple.Safari HomePage -string "" # Not sure if the next one w
 defaults write com.apple.Safari HomePage -string "favorites://"
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
+# Sort contacts by first name
+defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 # Hide the horrendous Adobe folder after LR opens.
 chflags hidden ~/Documents/Adobe
 
