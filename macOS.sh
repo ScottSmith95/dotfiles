@@ -24,7 +24,7 @@ printf "/////////////////////////${Reset}\n\n"
 brew tap homebrew/versions
 brew install node6-lts
 npm install --depth -1 --quiet -g npm # Update npm.
-npm install --depth -1 --quiet -g npm-check gulp-cli
+npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 
 # Python
 sudo easy_install -q pip
@@ -56,7 +56,7 @@ brew untap caskroom/versions # I won't use this often and parallels 11 isn't get
 
 brew cask cleanup
 brew cleanup --force
-rm -f -r /Library/Caches/Homebrew/*
+rm -rf /Library/Caches/Homebrew/*
 
 # Atom
 # apm install less-than-slash aesthetic-ui
