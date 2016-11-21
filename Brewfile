@@ -24,7 +24,6 @@ cask 'github-desktop'
 # cask 'parallels-desktop' # Installs Parallels 12 and I only own 11.
 cask 'framer'
 cask 'origami-studio'
-mas  'Slack', id: 803453959
 mas  'Pixelmator', id: 407963104
 mas  'iA Writer', id: 775737590
 mas  'Xcode', id: 497799835
@@ -35,18 +34,19 @@ brew 'sl'
 brew 'youtube-dl'
 cask 'appcleaner'
 cask 'keepingyouawake'
+# cask 'flux'
 cask 'imageoptim'
 cask 'licecap'
 cask 'quitter'
 mas  'Sip', id: 507257563
 mas  'Deliveries', id: 924726344
 mas  'Kaleidoscope', id: 587512244
-# DL: Flux
 
 # Communication
+mas  'Tweetbot', id: 557168941
+mas  'Slack', id: 803453959
 # brew cask install skype
 # brew cask install steam
-mas  'Tweetbot', id: 557168941
 # DL: ?Steam ?Skype
 
 # Fonts
