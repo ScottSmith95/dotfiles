@@ -41,6 +41,7 @@ cask 'quitter'
 mas  'Sip', id: 507257563
 mas  'Deliveries', id: 924726344
 mas  'Kaleidoscope', id: 587512244
+mas  'iStat Mini', id: 927292435
 
 # Communication
 mas  'Tweetbot', id: 557168941

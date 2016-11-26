@@ -27,7 +27,9 @@ npm install --depth -1 --quiet -g npm # Update npm.
 npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 
 # Python
-sudo easy_install -q pip
+brew install python3
+pip3 install virtualenv
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 
 # Files to move over:
   # ~/Documents/* (not synced/aliased crap)
@@ -37,6 +39,8 @@ sudo easy_install -q pip
   # ~/Library/Fonts/*
   # ~/Library/Application Support/Adobe/Lightroom/Develop Presets/User Presets/*
   # ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/*
+  # ~/Library/Application Support/Coda 2/Modes/*
+  # ~/Library/Application Support/Coda 2/Plug-ins/*
 
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Apps from Homebrew and MAS. \n\n"
@@ -44,7 +48,7 @@ printf "Get ready to type in Apple ID password. \n"
 printf "/////////////////////////${Reset}\n\n"
 cd $ScriptDir
 brew install mas
-mas signin --dialog InventScott@icloud.com
+mas signin --dialog
 
 brew tap Homebrew/bundle
 brew bundle
