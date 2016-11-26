@@ -4,7 +4,7 @@
 
 # Variables.
 Username='Scott'
-ScriptDir='/Users/Scott/Documents/Personal/Startup\ Scripts'
+ScriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" #http://stackoverflow.com/a/246128/1867887
 Style='\033[0;36m'
 Reset='\033[0m' # No Color
 
@@ -29,7 +29,6 @@ npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 # Python
 brew install python3
 pip3 install virtualenv
-echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 
 # Files to move over:
   # ~/Documents/* (not synced/aliased crap)
@@ -48,7 +47,12 @@ printf "Get ready to type in Apple ID password. \n"
 printf "/////////////////////////${Reset}\n\n"
 cd $ScriptDir
 brew install mas
-mas signin --dialog
+
+printf "\n${Style}/////////////////////////\n"
+printf "Type in your Apple ID below for App Store authentication. \n${Reset}"
+read AppleID
+printf "${Style}/////////////////////////${Reset}\n\n"
+mas signin --dialog $AppleID
 
 brew tap Homebrew/bundle
 brew bundle
