@@ -32,6 +32,7 @@ pip3 install virtualenv
 
 # Files to move over:
   # ~/Documents/* (not synced/aliased crap)
+  # ~/Parallels/
   # ~/Pictures/* (sans iCloud Photo Library)
   # ~/Movies/*
   # ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
@@ -67,7 +68,7 @@ brew cleanup --force
 rm -rf /Library/Caches/Homebrew/*
 
 # Atom
-# apm install less-than-slash aesthetic-ui
+# apm install less-than-slash aesthetic-ui rap-horn atom-terminal
 
 # Hyper
 # 'hyperterm-close-on-left',
