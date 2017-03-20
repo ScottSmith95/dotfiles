@@ -68,7 +68,7 @@ brew cleanup --force
 rm -rf /Library/Caches/Homebrew/*
 
 # Atom
-# apm install less-than-slash aesthetic-ui rap-horn atom-terminal
+apm install less-than-slash aesthetic-ui rap-horn atom-terminal
 
 # Hyper
 # 'hyperterm-close-on-left',
