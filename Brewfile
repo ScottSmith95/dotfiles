@@ -26,7 +26,7 @@ cask 'framer'
 cask 'origami-studio'
 mas  'Pixelmator', id: 407963104
 mas  'iA Writer', id: 775737590
-#mas  'Xcode', id: 497799835 # This one takes a long time to download and install. 
+# mas  'Xcode', id: 497799835 # This one takes a long time to download and install. 
 # DL: Adobe Creative Cloud: LR ID AI PS
 
 # Utilities
@@ -37,6 +37,7 @@ cask 'keepingyouawake'
 cask 'licecap'
 cask 'qlmarkdown'
 cask 'quitter'
+brew 'p7zip'
 brew 'sl'
 brew 'youtube-dl'
 mas  'Sip', id: 507257563
