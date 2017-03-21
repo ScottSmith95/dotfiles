@@ -22,7 +22,7 @@ printf "\n${Style}/////////////////////////\n"
 printf "Installing Node Things. \n"
 printf "/////////////////////////${Reset}\n\n"
 brew install n
-sudo n lts
+sudo n lts --quiet
 npm update --depth -1 --quiet -g npm n
 npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 
