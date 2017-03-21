@@ -21,9 +21,9 @@ brew upgrade
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Node Things. \n"
 printf "/////////////////////////${Reset}\n\n"
-brew tap homebrew/versions
-brew install node6-lts
-npm install --depth -1 --quiet -g npm # Update npm.
+brew install n
+sudo n lts
+npm update --depth -1 --quiet -g npm n
 npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 
 # Python
@@ -120,7 +120,7 @@ chflags hidden ~/Documents/Adobe
 # Set git info
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
-git config --global core.editor "nano" 
+git config --global core.editor "nano"
 
 # SSH Key Permissions
 chmod 400 ~/.ssh/id_rsa
