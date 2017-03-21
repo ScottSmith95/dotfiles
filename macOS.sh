@@ -120,7 +120,7 @@ chflags hidden ~/Documents/Adobe
 # Set git info
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
-export EDITOR='nano';
+git config --global core.editor "nano" 
 
 # SSH Key Permissions
 chmod 400 ~/.ssh/id_rsa
