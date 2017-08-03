@@ -41,6 +41,7 @@ pip3 install virtualenv
   # ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/*
   # ~/Library/Application Support/Coda 2/Modes/*
   # ~/Library/Application Support/Coda 2/Plug-ins/*
+  # ~/Library/Preferences/Adobe InDesign/Version 12.0/en_US/Workspaces/Scott.xml
 
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Apps from Homebrew and MAS. \n\n"
@@ -68,7 +69,7 @@ brew cleanup --force
 rm -rf /Library/Caches/Homebrew/*
 
 # Atom
-apm install less-than-slash aesthetic-ui rap-horn atom-terminal
+apm install less-than-slash aesthetic-ui rap-horn atom-terminal editorconfig
 
 # Hyper
 # 'hyperterm-close-on-left',
@@ -121,6 +122,9 @@ chflags hidden ~/Documents/Adobe
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
 git config --global core.editor "nano"
+gpg --list-secret-keys
+git config --global user.signingkey 2F7E8D8E
+git config --global commit.gpgsign true
 
 # SSH Key Permissions
 chmod 400 ~/.ssh/id_rsa
