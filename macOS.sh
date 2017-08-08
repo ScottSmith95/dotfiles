@@ -3,8 +3,8 @@
 # macOS Guest (non-root) user.
 
 # Variables.
-Username='studentuser'
-ScriptDir='/Users/studentuser/Downloads'
+Username='ssmith95'
+ScriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" #http://stackoverflow.com/a/246128/1867887
 Style='\033[0;36m'
 Reset='\033[0m' # No Color
 
@@ -15,7 +15,9 @@ printf "/////////////////////////${Reset}\n\n"
 
 mkdir -p ~/usr
 chflags hidden ~/usr
-echo "PATH="/Users/studentuser/usr/local/bin:$PATH"" > ~/.bash_profile
+echo "PATH=/Users/${Username}/usr/local/bin:$PATH" > ~/.bash_profile
+
+ruby -e install.rb
 
 # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -73,7 +75,7 @@ printf "/////////////////////////${Reset}\n\n"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1 # login screen too :)
-# Stop auto-rearranging Mission Control.
+# Stop auto-rearranging Mission Control
 defaults write com.apple.dock mru-spaces -bool false
 # When performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
@@ -85,13 +87,13 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
-# Set Safari’s home page to the favourites page.
-defaults write com.apple.Safari HomePage -string "" # Not sure if the next one works.
+# Set Safari’s home page to the favourites page
+defaults write com.apple.Safari HomePage -string "" # Not sure if the next one works
 defaults write com.apple.Safari HomePage -string "favorites://"
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
-# Hide the horrendous Adobe folder after LR opens.
-chflags hidden ~/Documents/Adobe
+# Sort contacts by first name
+defaults write com.apple.AddressBook ABNameSortingFormat -string "sortingFirstName sortingLastName"
 
 # The following preferences overwrite UW-IT's preference settings, not defaults.
 # Enable natural scrolling
@@ -107,9 +109,6 @@ defaults delete com.apple.dock expose-animation-duration
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
 export EDITOR='nano';
-
-# SSH Key Permissions
-chmod 400 ~/.ssh/id_rsa
 
 for app in "Finder" "Safari" "Dock"; do
   killall "${app}" &> /dev/null
