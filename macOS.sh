@@ -17,9 +17,10 @@ mkdir -p ~/usr
 chflags hidden ~/usr
 echo "PATH=/Users/${Username}/usr/local/bin:$PATH" > ~/.bash_profile
 
-ruby -e install.rb
+# chmod +x install.rb
+# ./install.rb
 
-# ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew update
 brew upgrade
