@@ -58,11 +58,7 @@ mas signin --dialog $AppleID
 
 brew tap Homebrew/bundle
 brew bundle
-
-brew tap caskroom/fonts
-brew tap caskroom/versions
-brew cask install parallels-desktop11
-brew untap caskroom/versions # I won't use this often and parallels 11 isn't getting updates.
+brew untap caskroom/versions # I don't use this otherwise and Parallels 11 isn't getting updates.
 
 brew cask cleanup
 brew cleanup --force
