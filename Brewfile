@@ -41,7 +41,8 @@ mas  'Xcode', id: 497799835 # This one takes a long time to download and install
 cask 'appcleaner'
 mas  'Deliveries', id: 924726344
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
-brew 'gpg'
+brew 'gpg' # For GitHub commit signing.
+brew 'gpg-agent' # To prevent GitHub commit signing from requiring password.
 cask 'handbrake'
 cask 'imageoptim'
 mas  'iStat Mini', id: 927292435
@@ -50,6 +51,7 @@ cask 'kap'
 cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
+brew 'pinentry-mac' # To prevent GitHub commit signing from requiring password.
 mas  'PiPifier', id: 1160374471
 brew 'p7zip'
 cask 'qlmarkdown'
