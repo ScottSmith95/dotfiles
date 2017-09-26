@@ -3,8 +3,8 @@
 # macOS
 
 # Variables.
-Username='Scott'
-ScriptDir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" #http://stackoverflow.com/a/246128/1867887
+Username='scott'
+ScriptDir="/Users/scott/Documents/Personal/Startup\ Scripts/"
 Style='\033[0;36m'
 Reset='\033[0m' # No Color
 
@@ -24,7 +24,7 @@ printf "/////////////////////////${Reset}\n\n"
 brew install n
 sudo n lts --quiet
 npm update --depth -1 --quiet -g npm n
-npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
+sudo npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
 
 # Python
 brew install python3
@@ -118,7 +118,17 @@ chflags hidden ~/Documents/Adobe
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
 git config --global core.editor "nano"
-gpg --list-secret-keys
+
+echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
+cat <<EOT >> ~/.gnupg/gpg.conf
+use-agent
+pinentry-program /usr/local/bin/pinentry-mac
+EOT
+
+keybase pgp export | gpg --import
+keybase pgp export --secret | gpg --import --allow-secret-key-import
+gpg --list-secret-keys --keyid-format LONG
+
 git config --global user.signingkey 2F7E8D8E
 git config --global commit.gpgsign true
 
