@@ -15,7 +15,7 @@ mas  '1Password', id: 443987910
 
 # Apple
 mas  'iMovie', id: 408981434
-mas  'Pages', id: 775737590
+mas  'Pages', id: 409201541
 mas  'Keynote', id: 409183694
 
 # Work
