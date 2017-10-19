@@ -9,9 +9,8 @@ tap 'caskroom/fonts'
 cask 'adobe-creative-cloud' # installer dl
 cask 'backblaze' # installer dl
 # cask 'dropbox' # stopped using Dropbox
-cask 'google-drive'
+cask 'google-drive-file-stream'
 mas  '1Password', id: 443987910
-# DL: ?Screens Connect
 
 # Apple
 mas  'iMovie', id: 408981434
