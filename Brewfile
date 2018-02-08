@@ -2,7 +2,6 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'caskroom/versions' # Only used for parallels-desktop11.
 tap 'caskroom/fonts'
 
 # Basics
@@ -24,17 +23,17 @@ cask 'sketch'
 cask 'coda'
 cask 'framer'
 cask 'google-chrome'
-cask 'github-desktop'
+cask 'firefox'
+# cask 'github-desktop'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
 # cask 'origami-studio'
-# cask 'parallels-desktop' # Installs Parallels 12 and I only own 11.
-cask 'parallels-desktop11'
+cask 'parallels-desktop'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
 mas  'Todoist', id: 585829637
-mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
-# DL: Adobe Creative Cloud: LR ID AI PS
+#mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
+# DL: Adobe Creative Cloud: LR CC, XD, ID, AI, PS, LR Classic
 
 # Utilities
 cask 'appcleaner'

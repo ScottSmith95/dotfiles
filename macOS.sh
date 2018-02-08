@@ -58,7 +58,6 @@ mas signin --dialog $AppleID
 
 brew tap Homebrew/bundle
 brew bundle
-brew untap caskroom/versions # I don't use this otherwise and Parallels 11 isn't getting updates.
 
 brew cask cleanup
 brew cleanup --force
