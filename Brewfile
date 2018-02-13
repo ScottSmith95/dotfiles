@@ -55,7 +55,7 @@ brew 'p7zip'
 cask 'qlmarkdown'
 cask 'quitter'
 cask 'timely'
-mas  'Sip', id: 507257563
+cask 'sip'
 mas  'SmileAllDay', id: 1180442868
 brew 'sl'
 cask 'the-unarchiver'
