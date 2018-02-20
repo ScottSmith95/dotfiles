@@ -37,6 +37,7 @@ mas  'Todoist', id: 585829637
 
 # Utilities
 cask 'appcleaner'
+cask 'craftmanager'
 mas  'Deliveries', id: 924726344
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
 brew 'gpg' # For GitHub commit signing.
