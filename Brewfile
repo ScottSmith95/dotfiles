@@ -27,13 +27,12 @@ cask 'firefox'
 # cask 'github-desktop'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
-# cask 'origami-studio'
-cask 'parallels-desktop'
+cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
 mas  'Todoist', id: 585829637
-#mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
-# DL: Adobe Creative Cloud: LR CC, XD, ID, AI, PS, LR Classic
+# mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
+# DL: Adobe Creative Cloud: LR CC, XD, ID, AI, PS
 
 # Utilities
 cask 'appcleaner'
@@ -55,7 +54,6 @@ mas  'PiPifier', id: 1160374471
 brew 'p7zip'
 cask 'qlmarkdown'
 cask 'quitter'
-cask 'timely'
 cask 'sip'
 mas  'SmileAllDay', id: 1180442868
 brew 'sl'
