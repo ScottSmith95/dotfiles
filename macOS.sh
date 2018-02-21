@@ -8,9 +8,17 @@ ScriptDir="/Users/scott/Documents/Personal/Startup\ Scripts/"
 Style='\033[0;36m'
 Reset='\033[0m' # No Color
 
+# Command Line Tools
 printf "\n${Style}/////////////////////////\n"
 printf "Welcome! \n\n"
-printf "Kicking things off by installing Homebrew. \n"
+printf "Kicking things off by installing Command Line Tools. \n"
+printf "/////////////////////////${Reset}\n\n"
+
+xcode-select --install
+
+printf "\n${Style}/////////////////////////\n"
+printf "Nice! \n\n"
+printf "Moving on to installing Homebrew. \n"
 printf "/////////////////////////${Reset}\n\n"
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -104,6 +112,10 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Set Safari’s home page to the favourites page
 defaults write com.apple.Safari HomePage -string "" # Not sure if the next one works
 defaults write com.apple.Safari HomePage -string "favorites://"
+# Ask websites not to track me
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+# Show status bar
+defaults write com.apple.Safari ShowStatusBar -bool true
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
 # Sort contacts by first name
