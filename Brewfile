@@ -61,6 +61,7 @@ cask 'the-unarchiver'
 cask 'transmission'
 cask 'vlc'
 brew 'youtube-dl'
+mas  '1Blocker', id: 1107421413
 
 # Communication
 mas  'Tweetbot', id: 557168941
