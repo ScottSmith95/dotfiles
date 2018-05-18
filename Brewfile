@@ -69,7 +69,8 @@ mas  'Slack', id: 803453959
 # cask 'steam'
 
 # Fonts
-cask 'font-work-sans'
+cask 'font-ibm-plex'
 cask 'font-open-sans'
 cask 'font-opendyslexic'
 cask 'font-roboto-mono'
+cask 'font-work-sans'
