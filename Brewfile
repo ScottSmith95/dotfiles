@@ -9,7 +9,7 @@ cask 'adobe-creative-cloud' # installer dl
 cask 'backblaze' # installer dl
 # cask 'dropbox' # stopped using Dropbox
 cask 'google-drive-file-stream'
-mas  '1Password', id: 443987910
+cask '1password'
 
 # Apple
 mas  'iMovie', id: 408981434
