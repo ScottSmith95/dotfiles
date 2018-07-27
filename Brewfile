@@ -17,26 +17,24 @@ mas  'Pages', id: 409201541
 mas  'Keynote', id: 409183694
 
 # Work
-cask 'atom'
 cask 'hyper'
 cask 'sketch'
 cask 'coda'
 cask 'framer'
 cask 'google-chrome'
 cask 'firefox'
-# cask 'github-desktop'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
 cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
 mas  'Todoist', id: 585829637
+cask 'visual-studio-code'
 # mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
 # DL: Adobe Creative Cloud: LR CC, XD, ID, AI, PS
 
 # Utilities
 cask 'appcleaner'
-cask 'craftmanager'
 mas  'Deliveries', id: 924726344
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
 brew 'gpg' # For GitHub commit signing.
@@ -49,6 +47,7 @@ cask 'kap'
 cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
+cask 'nosleep'
 brew 'pinentry-mac' # To prevent GitHub commit signing from requiring password.
 mas  'PiPifier', id: 1160374471
 brew 'p7zip'
@@ -66,7 +65,7 @@ mas  '1Blocker', id: 1107421413
 # Communication
 mas  'Tweetbot', id: 557168941
 mas  'Slack', id: 803453959
-# cask 'steam'
+cask 'spotify'
 
 # Fonts
 cask 'font-ibm-plex'
