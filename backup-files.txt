@@ -5,7 +5,7 @@ Movies
 .ssh/id_rsa
 .ssh/id_rsa.pub
 Library/Fonts
-Library/Application Support/Adobe/Lightroom CC/Develop Presets/User Presets
+Library/Application Support/Adobe/Lightroom CC/Develop Presets
 Library/Application Support/com.bohemiancoding.sketch3/Plugins
 Library/Application Support/Coda 2/Modes
 Library/Application Support/Coda 2/Plug-ins
