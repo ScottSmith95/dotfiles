@@ -38,7 +38,6 @@ cask 'appcleaner'
 mas  'Deliveries', id: 924726344
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
 brew 'gpg' # For GitHub commit signing.
-brew 'gpg-agent' # To prevent GitHub commit signing from requiring password.
 cask 'handbrake'
 cask 'imageoptim'
 mas  'iStat Mini', id: 927292435
@@ -48,7 +47,6 @@ cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
 cask 'nosleep'
-brew 'pinentry-mac' # To prevent GitHub commit signing from requiring password.
 mas  'PiPifier', id: 1160374471
 brew 'p7zip'
 cask 'qlmarkdown'

@@ -120,17 +120,11 @@ git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
 git config --global core.editor "nano"
 
-echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
-cat <<EOT >> ~/.gnupg/gpg.conf
-use-agent
-pinentry-program /usr/local/bin/pinentry-mac
-EOT
-
-keybase pgp export | gpg --import
-keybase pgp export --secret | gpg --import --allow-secret-key-import
+keybase pgp export -q E9934D940E9347EE | gpg --import
+keybase pgp export -q E9934D940E9347EE --secret | gpg --import --allow-secret-key-import
 gpg --list-secret-keys --keyid-format LONG
 
-git config --global user.signingkey 2F7E8D8E
+git config --global user.signingkey E9934D940E9347EE
 git config --global commit.gpgsign true
 
 # SSH Key Permissions
