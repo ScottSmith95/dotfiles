@@ -115,6 +115,13 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Hide the horrendous Adobe folder after LR opens
 chflags hidden ~/Documents/Adobe
 
+# Visual Studio Code Extensions
+code --install-extension formulahendry.auto-close-tag
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eg2.vscode-npm-script
+code --install-extension esbenp.prettier-vscode
+code --install-extension kelvin.vscode-sshfs
+
 # Set git info
 git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
