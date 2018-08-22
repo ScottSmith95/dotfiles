@@ -30,9 +30,9 @@ printf "\n${Style}/////////////////////////\n"
 printf "Installing Node Things. \n"
 printf "/////////////////////////${Reset}\n\n"
 brew install n
-sudo n lts --quiet
-npm update --depth -1 --quiet -g npm n
-sudo npm install --depth -1 --quiet -g npm-check gulp-cli trash-cli
+sudo n lts
+sudo npm update --quiet -g npm
+sudo npm install --quiet -g npm-check gulp-cli trash-cli
 
 # Python
 brew install python3

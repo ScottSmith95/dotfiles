@@ -57,6 +57,7 @@ brew 'sl'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'vlc'
+brew 'yarn', args: 'without-node'
 brew 'youtube-dl'
 mas  '1Blocker', id: 1107421413
 
