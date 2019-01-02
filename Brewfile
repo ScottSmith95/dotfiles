@@ -7,8 +7,7 @@ tap 'caskroom/fonts'
 # Basics
 cask 'adobe-creative-cloud' # installer dl
 cask 'backblaze' # installer dl
-# cask 'dropbox' # stopped using Dropbox
-cask 'google-drive-file-stream'
+cask 'dropbox'
 cask '1password'
 
 # Apple
@@ -25,10 +24,11 @@ cask 'google-chrome'
 cask 'firefox'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
+cask 'notion'
 cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
-mas  'Todoist', id: 585829637
+cask 'transmit'
 cask 'visual-studio-code'
 # mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
 # DL: Adobe Creative Cloud: LR CC, XD, ID, AI, PS
@@ -36,6 +36,7 @@ cask 'visual-studio-code'
 # Utilities
 cask 'appcleaner'
 mas  'Deliveries', id: 924726344
+cask 'encryptme'
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
 brew 'gpg' # For GitHub commit signing.
 cask 'handbrake'

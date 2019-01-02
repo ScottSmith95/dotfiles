@@ -44,11 +44,10 @@ pip3 install virtualenv
   # ~/Movies/*
   # ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
   # ~/Library/Fonts/*
-  # ~/Library/Application Support/Adobe/Lightroom CC/Develop Presets/*
   # ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/*
   # ~/Library/Application Support/Coda 2/Modes/*
   # ~/Library/Application Support/Coda 2/Plug-ins/*
-  # ~/Library/Preferences/Adobe InDesign/Version 13.0/en_GB/Workspaces/Scott.xml
+  # ~/Library/Preferences/Adobe InDesign/Version 14.0/en_GB/Workspaces/Scott.xml
 
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Apps from Homebrew and MAS. \n\n"
