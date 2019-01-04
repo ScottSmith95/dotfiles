@@ -65,7 +65,7 @@ mas signin --dialog $AppleID
 brew tap Homebrew/bundle
 brew bundle
 
-brew cask cleanup
+brew cleanup
 brew cleanup --force
 rm -rf /Library/Caches/Homebrew/*
 
@@ -126,6 +126,11 @@ git config --global user.name "Scott Smith"
 git config --global user.email mail@ScottHSmith.com
 git config --global core.editor "nano"
 
+printf "\n${Style}/////////////////////////\n"
+printf "Attempting automatic key import. \n" 
+printf "Directions available here: https://github.com/pstadler/keybase-gpg-github \n" 
+printf "/////////////////////////${Reset}\n\n"
+touch ~/.profile && echo GPG_TTY=$(tty) >> ~/.profile && echo export GPG_TTY >> ~/.profile
 keybase pgp export -q E9934D940E9347EE | gpg --import
 keybase pgp export -q E9934D940E9347EE --secret | gpg --import --allow-secret-key-import
 gpg --list-secret-keys --keyid-format LONG
