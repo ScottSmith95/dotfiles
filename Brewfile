@@ -28,6 +28,7 @@ cask 'notion'
 cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
+mas  'Spark', id: 1176895641
 cask 'transmit'
 cask 'visual-studio-code'
 # mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
@@ -38,7 +39,7 @@ cask 'appcleaner'
 mas  'Deliveries', id: 924726344
 cask 'encryptme'
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
-brew 'gpg' # For GitHub commit signing.
+cask 'gpg-suite' # For GitHub commit signing.
 cask 'handbrake'
 cask 'imageoptim'
 mas  'iStat Mini', id: 927292435
@@ -47,6 +48,7 @@ cask 'kap'
 cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
+cask 'nightowl'
 cask 'nosleep'
 mas  'PiPifier', id: 1160374471
 brew 'p7zip'
@@ -58,7 +60,7 @@ brew 'sl'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'vlc'
-brew 'yarn', args: 'without-node'
+brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
 mas  '1Blocker', id: 1107421413
 
