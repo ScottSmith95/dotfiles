@@ -35,7 +35,9 @@ sudo npm update --quiet -g npm
 sudo npm install --quiet -g npm-check gulp-cli trash-cli
 
 # Python
-brew install python3
+brew install python
+# set Python 3 as the default
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 pip3 install virtualenv
 
 # Files to move over:
