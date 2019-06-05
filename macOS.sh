@@ -44,9 +44,11 @@ pip3 install virtualenv
   # ~/Parallels/
   # ~/Pictures/* (sans iCloud Photo, Lightroom Library)
   # ~/Movies/*
+  # ~/Sites/*.code-workspace
   # ~/.ssh/id_rsa; ~/.ssh/id_rsa.pub
   # ~/Library/Fonts/*
   # ~/Library/Application Support/com.bohemiancoding.sketch3/Plugins/*
+  # ~/Library/Application Support/Code/User/settings.json
   # ~/Library/Application Support/Coda 2/Modes/*
   # ~/Library/Application Support/Coda 2/Plug-ins/*
   # ~/Library/Preferences/Adobe InDesign/Version 14.0/en_GB/Workspaces/Scott.xml
