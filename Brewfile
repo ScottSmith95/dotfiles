@@ -2,7 +2,7 @@
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 
 # Basics
 cask 'adobe-creative-cloud' # installer dl
@@ -20,6 +20,7 @@ cask 'hyper'
 cask 'sketch'
 cask 'coda'
 cask 'framer'
+cask 'figma'
 cask 'google-chrome'
 cask 'firefox'
 mas  'iA Writer', id: 775737590
@@ -29,6 +30,7 @@ cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
 mas  'Spark', id: 1176895641
+cask 'toggl'
 cask 'transmit'
 cask 'visual-studio-code'
 # mas  'Xcode', id: 497799835 # This one takes a long time to download and install.
@@ -37,7 +39,7 @@ cask 'visual-studio-code'
 # Utilities
 cask 'appcleaner'
 mas  'Deliveries', id: 924726344
-cask 'encryptme'
+cask 'expressvpn'
 brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
 cask 'gpg-suite' # For GitHub commit signing.
 cask 'handbrake'
@@ -48,7 +50,6 @@ cask 'kap'
 cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
-cask 'nightowl'
 cask 'nosleep'
 mas  'PiPifier', id: 1160374471
 brew 'p7zip'
@@ -65,7 +66,7 @@ brew 'youtube-dl'
 mas  '1Blocker', id: 1107421413
 
 # Communication
-mas  'Tweetbot', id: 557168941
+mas  'Tweetbot', id: 1384080005
 mas  'Slack', id: 803453959
 cask 'spotify'
 

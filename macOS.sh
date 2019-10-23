@@ -25,6 +25,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 brew upgrade
 
+sudo chown -R $(whoami) /usr/local/share/man/man5 /usr/local/share/man/man7 /usr/local/share/man/man8
+chmod u+w /usr/local/share/man/man5 /usr/local/share/man/man7 /usr/local/share/man/man8
+
 # Node
 printf "\n${Style}/////////////////////////\n"
 printf "Installing Node Things. \n"
@@ -124,6 +127,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension kelvin.vscode-sshfs
+code --install-extension esbenp.csstools.postcss
 
 # Set git info
 git config --global user.name "Scott Smith"
