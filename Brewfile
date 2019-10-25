@@ -16,12 +16,12 @@ mas  'Pages', id: 409201541
 mas  'Keynote', id: 409183694
 
 # Work
-cask 'hyper'
-cask 'sketch'
+cask 'brave'
 cask 'coda'
 cask 'framer'
 cask 'figma'
 cask 'google-chrome'
+cask 'hyper'
 cask 'firefox'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
@@ -30,6 +30,7 @@ cask 'now'
 cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
+cask 'sketch'
 mas  'Spark', id: 1176895641
 cask 'toggl'
 cask 'transmit'
