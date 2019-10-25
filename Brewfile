@@ -16,8 +16,9 @@ mas  'Pages', id: 409201541
 mas  'Keynote', id: 409183694
 
 # Work
-cask 'brave'
+cask 'brave-browser'
 cask 'coda'
+cask 'docker'
 cask 'framer'
 cask 'figma'
 cask 'google-chrome'
