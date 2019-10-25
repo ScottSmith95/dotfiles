@@ -26,6 +26,7 @@ cask 'firefox'
 mas  'iA Writer', id: 775737590
 mas  'Icon Slate', id: 439697913
 cask 'notion'
+cask 'now'
 cask 'parallels'
 mas  'Pixelmator', id: 407963104
 cask 'postman'
