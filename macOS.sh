@@ -35,7 +35,7 @@ printf "/////////////////////////${Reset}\n\n"
 brew install n
 sudo n lts
 sudo npm update --quiet -g npm
-sudo npm install --quiet -g npm-check gulp-cli trash-cli
+sudo npm install --quiet -g npm-check gulp-cli trash-cli now
 
 # Python
 brew install python
