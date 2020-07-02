@@ -40,9 +40,10 @@ cask 'visual-studio-code'
 
 # Utilities
 cask 'appcleaner'
+cask 'bartender'
 mas  'Deliveries', id: 924726344
 cask 'expressvpn'
-brew 'ffmpeg', args: ['with-libvorbis', 'with-libvpx']
+brew 'ffmpeg'
 cask 'gpg-suite' # For GitHub commit signing.
 cask 'handbrake'
 cask 'imageoptim'
@@ -63,7 +64,6 @@ brew 'sl'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'vlc'
-brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
 mas  '1Blocker', id: 1107421413
 
@@ -71,9 +71,10 @@ mas  '1Blocker', id: 1107421413
 mas  'Tweetbot', id: 1384080005
 mas  'Slack', id: 803453959
 cask 'spotify'
+cask 'zoomus'
 
 # Fonts
-cask 'font-ibm-plex'
+#cask 'font-ibm-plex'
 cask 'font-open-sans'
 cask 'font-opendyslexic'
 cask 'font-roboto-mono'

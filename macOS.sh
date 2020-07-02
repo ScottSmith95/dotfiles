@@ -35,7 +35,7 @@ printf "/////////////////////////${Reset}\n\n"
 brew install n
 sudo n lts
 sudo npm update --quiet -g npm
-sudo npm install --quiet -g npm-check gulp-cli trash-cli now
+sudo npm install --quiet -g npm-check gulp-cli trash-cli vercel
 
 # Python
 brew install python
@@ -108,8 +108,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Set Safari’s home page to the favourites page
 defaults write com.apple.Safari HomePage -string "" # Not sure if the next one works
 defaults write com.apple.Safari HomePage -string "favorites://"
-# Ask websites not to track me
-defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 # Show status bar
 defaults write com.apple.Safari ShowStatusBar -bool true
 # Use plain text mode for new TextEdit documents
