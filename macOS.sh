@@ -34,8 +34,10 @@ printf "Installing Node Things. \n"
 printf "/////////////////////////${Reset}\n\n"
 brew install n
 sudo n lts
+brew install nvm
+nvm use system
 sudo npm update --quiet -g npm
-sudo npm install --quiet -g npm-check gulp-cli trash-cli vercel
+sudo npm install --quiet -g npm-check gulp-cli trash-cli vercel @cloudflare/wrangler
 
 # Python
 brew install python
